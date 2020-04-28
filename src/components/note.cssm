@@ -1,0 +1,12 @@
+/* importing colors */
+@value colors: "./colors.cssm";
+@value base00 from colors;
+
+.note {
+    position: fixed;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 4px base00;
+    border-radius: 2px;
+}

@@ -1,8 +1,12 @@
+/* importing colors */
+@value colors: "./colors.cssm";
+@value base01 from colors;
+
 :global(html),
 :global(body) {
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: base01;
     font-family: 'Montserrat', serif;
 }
 
