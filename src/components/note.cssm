@@ -1,0 +1,34 @@
+/* importing colors */
+@value colors: "./colors.cssm";
+@value base13 from colors;
+
+.note textarea {
+    resize: none;
+}
+
+.input {
+    background: transparent;
+    width: 100%;
+    padding: 0 .5rem;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: transparent;
+    transition: border 300ms;
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+.textarea {
+    overflow: hidden;
+    height: 22px;
+}
+
+.input:hover,
+.input:focus {
+    border-color: base13;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin: 0 0 .5rem;
+}

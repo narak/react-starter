@@ -1,5 +1,5 @@
 /*
- * Polyfill for requestIdleCallback
+ * Polyfill for requestIdleCallback from MDN
  */
 export default window.requestIdleCallback ||
     function(handler) {

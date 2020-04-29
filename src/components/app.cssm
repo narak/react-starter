@@ -1,8 +1,12 @@
+/* importing colors */
+@value colors: "./colors.cssm";
+@value base00, base01 from colors;
+
 :global(html),
 :global(body) {
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: base01;
     font-family: 'Montserrat', serif;
 }
 
@@ -12,8 +16,8 @@
 }
 
 .app {
-    margin: 10px;
-    padding: 10px;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -21,4 +25,14 @@
         margin: 0;
         padding: 0;
     }
+}
+
+.note {
+    position: fixed;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 4px base00;
+    border-radius: 2px;
+    padding: 1rem;
 }
